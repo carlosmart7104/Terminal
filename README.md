@@ -1,2 +1,2 @@
-# carlosmart7104.github.io-terminal
-Terminal preview
+# Terminal
+Terminal es una iniciativa para crear una terminal interactiva en javascript, funcional, completa y expandible.
