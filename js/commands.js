@@ -72,4 +72,4 @@ Terminal.prototype.ftp = function (argument) {
 		terminal._console(argument);
 	};
 };
-var terminal = new Terminal('#miTerminal','2015. @carlosmart7104');
+var terminal = new Terminal('#miTerminal','Terminal');
