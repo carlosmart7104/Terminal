@@ -1,4 +1,16 @@
+<<<<<<< HEAD
 // Agregamos los comandos al objeto consola
+=======
+// En este archivo se pueden agregar mas comandos a la consola 
+// con solo agregar el metodo con prototype al objeto Terminal
+// Este es el principio funcional, que cualquier expancion en las capacidades 
+// Pueda ser realizada solo agregando la funcion, sin agregar a una lista 
+// o tener que editar el nucleo del objeto.
+
+// Agregamos los comandos al objeto consola
+
+// Este comando permite hacer un alert de javascript, recive el string como argumento
+>>>>>>> origin/master
 Terminal.prototype.alert = function (string) {
 	if (string != undefined) {
 		alert(string);
@@ -7,6 +19,11 @@ Terminal.prototype.alert = function (string) {
 		terminal._console(string);
 	};
 };
+<<<<<<< HEAD
+=======
+
+// Este comando permite modificar el title de la instancia actual, recibe un string como argumento con el valor del nuevo titlulo
+>>>>>>> origin/master
 Terminal.prototype.title = function (argument) {
 	if (argument != undefined) {
 		this.titulo = argument;
@@ -16,6 +33,11 @@ Terminal.prototype.title = function (argument) {
 		terminal._console(argument);
 	};
 };
+<<<<<<< HEAD
+=======
+
+// Este comando permite modificar el color de texto de la instancia actual, recive un string como argumento con el valor css del color.
+>>>>>>> origin/master
 Terminal.prototype.text = function (argument) {
 	if (argument != undefined) {
 		if (argument=='default') {
@@ -34,6 +56,11 @@ Terminal.prototype.text = function (argument) {
 		terminal._console(argument);
 	};
 };
+<<<<<<< HEAD
+=======
+
+// Este comando permite cambiar el color de fondo de la instancia actual, recibe un string como argumento con el valor css del color.
+>>>>>>> origin/master
 Terminal.prototype.background = function (argument) {
 	if (argument != undefined) {
 		if (argument=='default') {
@@ -52,6 +79,11 @@ Terminal.prototype.background = function (argument) {
 		terminal._console(argument);
 	};
 };
+<<<<<<< HEAD
+=======
+
+// Este comando permite abrir una nueva pestaña del navegador a un sitio web, recibe un string como argumento con la direccion url sin http://
+>>>>>>> origin/master
 Terminal.prototype.open = function (argument) {
 	if (argument != undefined) {
 		terminal._console('<a href="http://'+argument+'/" target="_blank">'+argument+'</a>');
@@ -61,6 +93,11 @@ Terminal.prototype.open = function (argument) {
 		terminal._console(argument);
 	};
 };
+<<<<<<< HEAD
+=======
+
+// Este comando permite abrir una nueva pestaña de acceso ftp en el navegador, recibe un string como argumento separando los datos con espacios, en el orden host-ftp usuario y contraseña
+>>>>>>> origin/master
 Terminal.prototype.ftp = function (argument) {
 	if (argument != undefined) {
 		argument = argument.split(' ');
@@ -68,10 +105,16 @@ Terminal.prototype.ftp = function (argument) {
 		terminal._console('<a href="ftp://'+url+'/" target="_blank">'+argument[1]+':**********@'+argument[0]+'</a>');
 		window.open('ftp://'+url,'_blank');
 	} else {
-		argument = 'Use ftp seguido de la dirección electrónica el usuario y la contraseña entre comillas para abrir el panel ftp en una nueva pestaña. </br> Ejemplo: ftp "host user pasword", abre una nueva pestaña a al servidor con la sesion ftp iniciada.';
+		argument = 'Use ftp seguido de la dirección electrónica, el usuario y la contraseña, todo entre comillas, para abrir el panel ftp en una nueva pestaña. </br> Ejemplo: ftp "host user pasword", abre una nueva pestaña al servidor ftp con la sesion iniciada.';
 		terminal._console(argument);
 	};
 };
+<<<<<<< HEAD
 var terminal = new Terminal('#miTerminal','Terminal');
 // Generamos el mensaje de licencia.
 terminal._console('Terminal v1.0.5. </br> Licencia GPL, usted es libre de copiar, editar y redistribuir este software bajo la misma licencia.</br>Terminal. By: @carlosmart7104. </br> </br>');
+=======
+
+// iniciamos la instancia terminal del objeto Terminal con identificador: miTerminal y titulo: 2015. @carlosmart7104.
+var terminal = new Terminal('#miTerminal','Terminal');
+>>>>>>> origin/master
