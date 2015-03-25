@@ -73,3 +73,5 @@ Terminal.prototype.ftp = function (argument) {
 	};
 };
 var terminal = new Terminal('#miTerminal','Terminal');
+// Generamos el mensaje de licencia.
+terminal._console('Terminal.</br> v1.0.5. </br> Licencia GPL, usted es libre de copiar, editar y redistribuir este software bajo la misma lisencia.</br>Terminal. By: @carlosmart7104. </br> </br>');
