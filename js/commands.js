@@ -1,4 +1,12 @@
+// En este archivo se pueden agregar mas comandos a la consola 
+// con solo agregar el metodo con prototype al objeto Terminal
+// Este es el principio funcional, que cualquier expancion en las capacidades 
+// Pueda ser realizada solo agregando la funcion, sin agregar a una lista 
+// o tener que editar el nucleo del objeto.
+
 // Agregamos los comandos al objeto consola
+
+// Este comando permite hacer un alert de javascript, recive el string como argumento
 Terminal.prototype.alert = function (string) {
 	if (string != undefined) {
 		alert(string);
@@ -7,6 +15,8 @@ Terminal.prototype.alert = function (string) {
 		terminal._console(string);
 	};
 };
+
+// Este comando permite modificar el title de la instancia actual, recibe un string como argumento con el valor del nuevo titlulo
 Terminal.prototype.title = function (argument) {
 	if (argument != undefined) {
 		this.titulo = argument;
@@ -16,6 +26,8 @@ Terminal.prototype.title = function (argument) {
 		terminal._console(argument);
 	};
 };
+
+// Este comando permite modificar el color de texto de la instancia actual, recive un string como argumento con el valor css del color.
 Terminal.prototype.text = function (argument) {
 	if (argument != undefined) {
 		if (argument=='default') {
@@ -34,6 +46,8 @@ Terminal.prototype.text = function (argument) {
 		terminal._console(argument);
 	};
 };
+
+// Este comando permite cambiar el color de fondo de la instancia actual, recibe un string como argumento con el valor css del color.
 Terminal.prototype.background = function (argument) {
 	if (argument != undefined) {
 		if (argument=='default') {
@@ -52,6 +66,8 @@ Terminal.prototype.background = function (argument) {
 		terminal._console(argument);
 	};
 };
+
+// Este comando permite abrir una nueva pestaña del navegador a un sitio web, recibe un string como argumento con la direccion url sin http://
 Terminal.prototype.open = function (argument) {
 	if (argument != undefined) {
 		terminal._console('<a href="http://'+argument+'/" target="_blank">'+argument+'</a>');
@@ -61,6 +77,8 @@ Terminal.prototype.open = function (argument) {
 		terminal._console(argument);
 	};
 };
+
+// Este comando permite abrir una nueva pestaña de acceso ftp en el navegador, recibe un string como argumento separando los datos con espacios, en el orden host-ftp usuario y contraseña
 Terminal.prototype.ftp = function (argument) {
 	if (argument != undefined) {
 		argument = argument.split(' ');
@@ -72,4 +90,6 @@ Terminal.prototype.ftp = function (argument) {
 		terminal._console(argument);
 	};
 };
+
+// iniciamos la instancia terminal del objeto Terminal con identificador: miTerminal y titulo: 2015. @carlosmart7104.
 var terminal = new Terminal('#miTerminal','2015. @carlosmart7104');
