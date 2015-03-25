@@ -92,4 +92,4 @@ Terminal.prototype.ftp = function (argument) {
 };
 
 // iniciamos la instancia terminal del objeto Terminal con identificador: miTerminal y titulo: 2015. @carlosmart7104.
-var terminal = new Terminal('#miTerminal','2015. @carlosmart7104');
+var terminal = new Terminal('#miTerminal','Terminal');
