@@ -1,0 +1,28 @@
+{
+  "name": "terminal",
+  "version": "1.0.0",
+  "description": "terminal de comandos interactiva & like linux <3",
+  "main": "server.js",
+  "scripts": {
+    "test": "test",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carlosmart7104/Terminal.git"
+  },
+  "keywords": [
+    "terminal",
+    "linux",
+    "interactive"
+  ],
+  "author": "carlosmart7104",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/carlosmart7104/Terminal/issues"
+  },
+  "homepage": "https://github.com/carlosmart7104/Terminal#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
